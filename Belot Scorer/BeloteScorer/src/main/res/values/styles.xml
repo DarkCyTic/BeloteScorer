@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="styleBg" >
+        <item name="android:fontFamily">@font/oswald</item>
+    </style>
+
+    <style name="styleUk" >
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.NoFullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+</resources>

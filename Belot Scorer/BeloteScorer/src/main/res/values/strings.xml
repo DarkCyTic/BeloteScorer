@@ -1,0 +1,84 @@
+<resources>
+
+    <string name="app_name" translatable="false">Belote Scorer</string>
+
+    <!--Main Activity-->
+    <string name="title" translatable="false">Belote\nScorer</string>
+
+    <string name="newGame">New Game</string>
+    <string name="historyButton">Continue Game</string>
+
+    <!--Game Activity-->
+    <string name="weTeam">WE</string>
+    <string name="youTeam">YOU</string>
+    <string name="startingScore" translatable="false">0</string>
+
+    <!--Game Finished Dialog-->
+    <string name="gameFinishedDialogTitle">Did the game end?</string>
+    <string name="gameFinishedDialogMessage1">One point will be added to team "</string>
+    <string name="gameFinishedDialogMessage2">". A new game will automatically start!</string>
+
+    <string name="teamWon1">Team "</string>
+    <string name="teamWon2">" won!</string>
+
+    <string name="dialogYes">Yes</string>
+    <string name="dialogNo">No</string>
+
+    <!--Game Left Dialog-->
+    <string name="gameLeftDialogMessage">Only the game rounds will be saved. The individual point entries will be not be stored.</string>
+    <string name="gameLeftDialogTitle">Are you sure you want to leave the game?</string>
+
+    <!--Delete History Dialog-->
+    <string name="deleteHistoryDialogTitle">Are you sure you want to delete your history?</string>
+    <string name="deleteHistoryDialogMessage">All games in your history will be permanently deleted and you will not be able to recover them!</string>
+
+    <!--Delete History Entry Dialog-->
+    <string name="deleteHistoryEntryDialogTitle">Are you sure you want to delete this game?</string>
+    <string name="deleteHistoryEntryDialogMessage">This game will be permanently deleted from your history and you will not be able to recover it.</string>
+
+    <!--Toasts-->
+    <string name="gameNotSaved">Game was not saved!</string>
+    <string name="languageChanged">The language has been set to English!</string>
+    <string name="languageAlreadySelected">English is already selected!</string>
+    <string name="emptyName">Team names can\'t be empty. Changing to default.</string>
+    <string name="historyDeleted">Your history was deleted!</string>
+    <string name="exitGame">Please click BACK again to exit</string>
+
+    <!--Information Activity-->
+    <string name="informationTitle">Information</string>
+    <string name="informationIntro">"Бридж-белотът, или по-популярен като
+белот, е игра на карти, която е много
+разпространена в България. Белотът
+е разпространен също и в някои
+части на Гърция и Югославия."</string>
+    <string name="informationContent">Information</string>
+
+    <!--History Activity-->
+    <string name="deleteHistoryButton">Delete History</string>
+
+    <!--Content Description (CD)-->
+    <string name="bgFlagCD">This button translates the app from English into Bulgarian.</string>
+    <string name="ukFlagCD">This button translates the app from Bulgarian into English.</string>
+    <string name="infoButtonCD">This button shows the information page.</string>
+    <string name="historyButtonCD">This button opens the history page.</string>
+    <string name="newGameButtonCD">This button starts a new game.</string>
+    <string name="titleTextViewCD">This is the title of the app - Belot Scorer.</string>
+    <string name="rightInputFieldCD">Input field for the scores of the right team.</string>
+    <string name="leftInputFieldCD">Input field for the scores of the left team.</string>
+    <string name="leftTeamNameCD">Input Field for the name of the left team.</string>
+    <string name="rightTeamNameCD">Input Field for the name of the right team.</string>
+    <string name="rightTeamRoundsCD">The rounds score of the right team is displayed here.</string>
+    <string name="leftTeamRoundsCD">The rounds score of the left team is displayed here.</string>
+    <string name="historyListCD">A history list of all saved games.</string>
+    <string name="deleteHistoryButtonCD">This button deletes the current history saved on this device.</string>
+    <string name="teamsTextViewCD">This displays the names of the two teams.</string>
+    <string name="dateTextViewCD">This displays the date the game was saved.</string>
+    <string name="roundsTextViewCD">This displays the rounds scores of the two teams.</string>
+    <string name="informationTitleCD">This displays the information title.</string>
+    <string name="informationIntroCD">This displays the information introduction.</string>
+    <string name="informationContentCD">This displays the information content.</string>
+    <string name="leftTeamResultCD">This displays the result of the left team.</string>
+    <string name="rightTeamResultCD">This displays the result of the right team.</string>
+    <string name="deleteEntryButtonCD">This deletes the selected entry from your history!</string>
+
+</resources>

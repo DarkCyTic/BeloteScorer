@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Main Activity-->
+    <string name="newGame">НОВА ИГРА</string>
+    <string name="historyButton">ПРОДЪЛЖИ ИГРА</string>
+
+    <!--Game Activity-->
+    <string name="weTeam">НИЕ</string>
+    <string name="youTeam">ВИЕ</string>
+
+    <!--Game Finished Dialog-->
+    <string name="gameFinishedDialogTitle">Играта приключи?</string>
+    <string name="gameFinishedDialogMessage1">"Отбор "</string>
+    <string name="gameFinishedDialogMessage2">" ще получи една точка. Автоматично ще бъде започната нова игра!</string>
+
+    <string name="teamWon1">Отбор "</string>
+    <string name="teamWon2">" победи!</string>
+
+    <string name="dialogYes">Да</string>
+    <string name="dialogNo">Не</string>
+
+    <!--Game Left Dialog-->
+    <string name="gameLeftDialogMessage">Само рундовете ще бъдат запазени. Отделните точки в играта няма да съхранени.</string>
+    <string name="gameLeftDialogTitle">Сигурни ли сте, че искате да излезете от играта?</string>
+
+    <!--Delete History Dialog-->
+    <string name="deleteHistoryDialogTitle">Сигурен ли си, че искаш да изтриеш историята?</string>
+    <string name="deleteHistoryDialogMessage">Всички игри в твоята история ще бъдат перманентно изтрити и те никога повече няма да бъдат достъпни.</string>
+
+    <!--Delete History Entry Dialog-->
+    <string name="deleteHistoryEntryDialogTitle">Сигурен ли си, че искаш да изтриеш тази игра?</string>
+    <string name="deleteHistoryEntryDialogMessage">Тази игра ще бъде изтрита перманентно от твоята история и няма да може да бъде възстановена.</string>
+
+    <!--Toasts-->
+    <string name="gameNotSaved">Играта не беше запазена!</string>
+    <string name="languageChanged">Езикът е променен на български!</string>
+    <string name="languageAlreadySelected">Избраният език е български!</string>
+    <string name="emptyName">Имената на отборите не могат да са празни.</string>
+    <string name="historyDeleted">Твоята история беше изтрита!</string>
+    <string name="exitGame">Натиснете НАЗАД още един път, за да излезете</string>
+
+    <!--Information Activity-->
+    <string name="informationTitle">ИНФОРМАЦИЯ</string>
+    <string name="informationIntro">Бридж-белотът, или по популярен като белот, е игра на карти, която е много разпространена в България. Белотът е разпространен също и в някои части на Гърция и Югославия.</string>
+    <string name="informationContent">Информация</string>
+
+    <!--History Activity-->
+    <string name="deleteHistoryButton">Изтрий историята</string>
+
+    <!--Content Descriptions (CD)-->
+    <string name="bgFlagCD">Този бутон превежда приложението от английски език на български език.</string>
+    <string name="ukFlagCD">Този бутон превежда приложението от български език на английски език.</string>
+    <string name="infoButtonCD">Този бутон отваря страницата с информация.</string>
+    <string name="historyButtonCD">Този бутон отваря страницата с история.</string>
+    <string name="newGameButtonCD">Този бутон започва нова игра.</string>
+    <string name="titleTextViewCD">Това е името на приложението - Belot Scorer.</string>
+    <string name="rightInputFieldCD">Поле за писане на точките на десния отбор.</string>
+    <string name="leftInputFieldCD">Поле за писане на точките на левия отбор.</string>
+    <string name="leftTeamNameCD">Поле за писане на името на левия отбор.</string>
+    <string name="rightTeamNameCD">Поле за писане на името на десния отбор.</string>
+    <string name="rightTeamRoundsCD">Спечелените рундове на десния отбор се показват тук.</string>
+    <string name="leftTeamRoundsCD">Спечелените рундове на левия отбор се показват тук.</string>
+    <string name="historyListCD">История на предишните игри.</string>
+    <string name="deleteHistoryButtonCD">Този бутон изтрива запазените на това устройство игри.</string>
+    <string name="teamsTextViewCD">Това са имената на двата отбора.</string>
+    <string name="dateTextViewCD">Това е датата, на която е запазена играта.</string>
+    <string name="roundsTextViewCD">Това показва резултата от играта.</string>
+    <string name="informationTitleCD">Това е заглавието на страницата с информация.</string>
+    <string name="informationIntroCD">Това е въведението на страницата с информация.</string>
+    <string name="informationContentCD">Това е информацията.</string>
+    <string name="leftTeamResultCD">Това показва точките на левия отбор.</string>
+    <string name="rightTeamResultCD">Това показва точките на десния отбор.</string>
+    <string name="deleteEntryButtonCD">Този бутон трие избраната игра от историята!</string>
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstRL"
+    android:layout_width="310dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".game.GameActivity"
+    android:background="@color/colorWhite"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentEnd = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/leftTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:inputType="text"
+                android:labelFor="@string/leftTeamNameCD"
+                android:maxLength="3"
+                android:text="@string/weTeam"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75"/>
+
+            <EditText
+                android:id="@+id/rightTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:labelFor="@string/rightTeamNameCD"
+                android:maxLength="3"
+                android:text="@string/youTeam"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75"/>
+
+            <TextView
+                android:contentDescription="@string/rightTeamRoundsCD"
+                android:id="@+id/rightTeamRounds"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/startingScore"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rightTeamName"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toEndOf="@+id/leftTeamName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <TextView
+                android:id="@+id/leftTeamRounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/leftTeamRoundsCD"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/startingScore"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rightTeamRounds"
+                app:layout_constraintStart_toEndOf="@+id/leftTeamName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/gameScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/bottom"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top">
+
+        <LinearLayout
+            android:id="@+id/gameLinearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrey"
+            android:weightSum="1">
+            <!--<fragment-->
+                <!--android:id="@+id/fragment"-->
+                <!--android:name="com.nikolaynikolov.app.belotScorer.game.gameComponents.EntryFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:contentDescription="@string/leftTeamResultCD"
+                android:id="@+id/leftTeamResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/startingScore"
+                android:gravity="center"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:contentDescription="@string/rightTeamResultCD"
+                android:gravity="center"
+                android:id="@+id/rightTeamResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/startingScore"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
